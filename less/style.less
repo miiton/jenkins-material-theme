@@ -2,11 +2,10 @@
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import 'variables';
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
+@import 'fonts';
 
 :not(div.ace_content) {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Ubuntu', 'NotoSansJP', sans-serif !important;
   outline: none;
 }
 
@@ -15,10 +14,14 @@ body, table, form, td, th, p {
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Ubuntu', 'NotoSansJP', sans-serif !important;
   font-size: 13px !important;
   line-height: 20px !important;
   background-color: @color-bg;
+}
+
+table, form, input, td, th, p, textarea, select {
+  font-family: 'Ubuntu', 'NotoSansJP', sans-serif !important;
 }
 
 a, a:hover, a:visited, a:link {
@@ -175,7 +178,7 @@ table.progress-bar {
 }
 
 #main-panel > pre {
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Ubuntu Mono', monospace !important;
 }
 
 .yui-button {
@@ -215,7 +218,7 @@ table.progress-bar {
 
 .console-output, .console-output * {
   position: relative;
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Ubuntu Mono', monospace !important;
   font-size: 14px;
   background: @console-black;
   color: @console-white;
@@ -227,7 +230,7 @@ table.progress-bar {
 }
 
 .ace_content {
-  font: 12px/normal 'Roboto Mono', monospace;
+  font: 12px/normal 'Ubuntu Mono', monospace;
 }
 
 [style^="color:gray"] {
